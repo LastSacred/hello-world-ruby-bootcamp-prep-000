@@ -10,3 +10,9 @@ describe "Hello World" do
     load './hello_world.rb'
   end
 end
+describe "girl_in_the_hole" do
+  it 'puts"the lotion on its skin" or else it gets the hose again' do
+    expect($stdout).to receive(:puts).with("the lotion on it's skin")
+    load './girl_in_the_hole.rb'
+  end
+end
